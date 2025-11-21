@@ -50,9 +50,9 @@ public class PlatformerMovement : MonoBehaviour
     void Update()
     {
         velocity = TranslateInputToVelocity(moveInput);
-        //animator.SetFloat("VelocityX", Mathf.Abs(velocity.x));
+        animator.SetFloat("VelocityX", Mathf.Abs(velocity.x));
 
-        //animator.SetBool("InAir", IsGrounded());
+        animator.SetBool("InAir", IsGrounded());
         // Apply jump-input:
         if (jumpInput && wasGrounded)
         {

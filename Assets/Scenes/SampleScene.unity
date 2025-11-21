@@ -1656,6 +1656,7 @@ GameObject:
   - component: {fileID: 1506725341}
   - component: {fileID: 1506725340}
   - component: {fileID: 1506725339}
+  - component: {fileID: 1506725346}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -1807,8 +1808,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 10
   jumpForce: 10
-  spriteRenderer: {fileID: 0}
-  animator: {fileID: 0}
+  spriteRenderer: {fileID: 1506725344}
+  animator: {fileID: 1506725346}
 --- !u!70 &1506725341
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1843,8 +1844,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 1}
+  m_Offset: {x: 0, y: -0.14537883}
+  m_Size: {x: 1, y: 1.2907577}
   m_Direction: 0
 --- !u!58 &1506725342
 CircleCollider2D:
@@ -1880,8 +1881,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.104361}
-  m_Radius: 0.604361
+  m_Offset: {x: 0, y: -0.42672282}
+  m_Radius: 0.59804016
 --- !u!50 &1506725343
 Rigidbody2D:
   serializedVersion: 5
@@ -1953,7 +1954,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 8067571577687799186, guid: 06fca834eaaf6f9479cfa2b0eeefeda0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1979,6 +1980,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1506725346
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506725338}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f24f6a939a2814941b8e7589dda5d62a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1660305818
 GameObject:
   m_ObjectHideFlags: 0
